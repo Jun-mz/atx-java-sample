@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>SimpleWAS</title>
+    <style>
+        body { font-family: -apple-system, "Apple SD Gothic Neo", sans-serif; margin: 40px auto; max-width: 640px; line-height: 1.7; }
+        code { background: #f4f4f5; padding: 2px 6px; border-radius: 4px; }
+        li { margin-bottom: 6px; }
+    </style>
+</head>
+<body>
+<h1>SimpleWAS</h1>
+<p>OpenJDK 1.8 표준 API 만으로 만든 스레드 풀 기반 WAS 입니다.</p>
+<h2>엔드포인트</h2>
+<ul>
+    <li><code>GET /</code> — 이 정적 페이지</li>
+    <li><code>GET /hello?name=claude</code> — JSON 인사</li>
+    <li><code>GET /health</code> — 헬스 체크</li>
+    <li><code>POST /echo</code> — 요청 본문 그대로 반환</li>
+    <li><code>POST /login</code> · <code>GET /me</code> — 로컬 파일 세션</li>
+    <li><code>POST /reports</code> · <code>GET /reports?id=</code> — 인스턴스 로컬 리포트</li>
+    <li><code>GET /assets</code> · <code>POST /assets?name=</code> — NFS 공유 산출물</li>
+    <li><code>POST /upload?filename=</code> — S3 업로드 (외부화 완료)</li>
+    <li><code>GET /instance</code> — IMDS 인스턴스 정보</li>
+    <li><code>GET /admin/config</code> — 운영 접속 정보</li>
+</ul>
+</body>
+</html>

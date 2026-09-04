@@ -1,0 +1,16 @@
+# 빌드 산출물
+build/
+target/
+*.class
+
+# 런타임 데이터 (세션 .ser, 리포트 CSV, 공유 산출물 우회 경로)
+data/
+*.ser
+
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+*.iml
+.vscode/
